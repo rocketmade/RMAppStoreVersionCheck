@@ -21,6 +21,9 @@
 		CADB116219B93044003A0D66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB114419B93044003A0D66 /* UIKit.framework */; };
 		CADB116A19B93044003A0D66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CADB116819B93044003A0D66 /* InfoPlist.strings */; };
 		CADB116C19B93044003A0D66 /* RMAppStoreVersionCheckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB116B19B93044003A0D66 /* RMAppStoreVersionCheckTests.m */; };
+		CADB118519B930DE003A0D66 /* RMAppStoreVersionCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB118219B930DE003A0D66 /* RMAppStoreVersionCheck.m */; };
+		CADB118619B930DE003A0D66 /* RMAppVersionInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB118419B930DE003A0D66 /* RMAppVersionInformation.m */; };
+		CADB118819B930F5003A0D66 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB118719B930F5003A0D66 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		CADB116719B93044003A0D66 /* RMAppStoreVersionCheckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RMAppStoreVersionCheckTests-Info.plist"; sourceTree = "<group>"; };
 		CADB116919B93044003A0D66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CADB116B19B93044003A0D66 /* RMAppStoreVersionCheckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMAppStoreVersionCheckTests.m; sourceTree = "<group>"; };
+		CADB118119B930DE003A0D66 /* RMAppStoreVersionCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAppStoreVersionCheck.h; sourceTree = "<group>"; };
+		CADB118219B930DE003A0D66 /* RMAppStoreVersionCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAppStoreVersionCheck.m; sourceTree = "<group>"; };
+		CADB118319B930DE003A0D66 /* RMAppVersionInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAppVersionInformation.h; sourceTree = "<group>"; };
+		CADB118419B930DE003A0D66 /* RMAppVersionInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAppVersionInformation.m; sourceTree = "<group>"; };
+		CADB118719B930F5003A0D66 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CADB118919B93133003A0D66 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CADB118819B930F5003A0D66 /* SystemConfiguration.framework in Frameworks */,
 				CADB114319B93044003A0D66 /* CoreGraphics.framework in Frameworks */,
 				CADB114519B93044003A0D66 /* UIKit.framework in Frameworks */,
 				CADB114119B93044003A0D66 /* Foundation.framework in Frameworks */,
@@ -101,6 +111,8 @@
 		CADB113F19B93044003A0D66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CADB118919B93133003A0D66 /* CoreFoundation.framework */,
+				CADB118719B930F5003A0D66 /* SystemConfiguration.framework */,
 				CADB114019B93044003A0D66 /* Foundation.framework */,
 				CADB114219B93044003A0D66 /* CoreGraphics.framework */,
 				CADB114419B93044003A0D66 /* UIKit.framework */,
@@ -112,6 +124,10 @@
 		CADB114619B93044003A0D66 /* RMAppStoreVersionCheck */ = {
 			isa = PBXGroup;
 			children = (
+				CADB118119B930DE003A0D66 /* RMAppStoreVersionCheck.h */,
+				CADB118219B930DE003A0D66 /* RMAppStoreVersionCheck.m */,
+				CADB118319B930DE003A0D66 /* RMAppVersionInformation.h */,
+				CADB118419B930DE003A0D66 /* RMAppVersionInformation.m */,
 				CADB114F19B93044003A0D66 /* AppDelegate.h */,
 				CADB115019B93044003A0D66 /* AppDelegate.m */,
 				CADB115219B93044003A0D66 /* Main.storyboard */,
@@ -250,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CADB115719B93044003A0D66 /* ViewController.m in Sources */,
+				CADB118519B930DE003A0D66 /* RMAppStoreVersionCheck.m in Sources */,
 				CADB115119B93044003A0D66 /* AppDelegate.m in Sources */,
+				CADB118619B930DE003A0D66 /* RMAppVersionInformation.m in Sources */,
 				CADB114D19B93044003A0D66 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +474,7 @@
 				CADB117119B93044003A0D66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CADB117219B93044003A0D66 /* Build configuration list for PBXNativeTarget "RMAppStoreVersionCheckTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +483,7 @@
 				CADB117419B93044003A0D66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
