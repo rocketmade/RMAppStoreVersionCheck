@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CADB114119B93044003A0D66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB114019B93044003A0D66 /* Foundation.framework */; };
+		CADB114319B93044003A0D66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB114219B93044003A0D66 /* CoreGraphics.framework */; };
+		CADB114519B93044003A0D66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB114419B93044003A0D66 /* UIKit.framework */; };
+		CADB114B19B93044003A0D66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CADB114919B93044003A0D66 /* InfoPlist.strings */; };
+		CADB114D19B93044003A0D66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB114C19B93044003A0D66 /* main.m */; };
+		CADB115119B93044003A0D66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB115019B93044003A0D66 /* AppDelegate.m */; };
+		CADB115419B93044003A0D66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADB115219B93044003A0D66 /* Main.storyboard */; };
+		CADB115719B93044003A0D66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB115619B93044003A0D66 /* ViewController.m */; };
+		CADB115919B93044003A0D66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADB115819B93044003A0D66 /* Images.xcassets */; };
+		CADB116019B93044003A0D66 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB115F19B93044003A0D66 /* XCTest.framework */; };
+		CADB116119B93044003A0D66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB114019B93044003A0D66 /* Foundation.framework */; };
+		CADB116219B93044003A0D66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADB114419B93044003A0D66 /* UIKit.framework */; };
+		CADB116A19B93044003A0D66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CADB116819B93044003A0D66 /* InfoPlist.strings */; };
+		CADB116C19B93044003A0D66 /* RMAppStoreVersionCheckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CADB116B19B93044003A0D66 /* RMAppStoreVersionCheckTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CADB116319B93044003A0D66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CADB113519B93044003A0D66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CADB113C19B93044003A0D66;
+			remoteInfo = RMAppStoreVersionCheck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CADB113D19B93044003A0D66 /* RMAppStoreVersionCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMAppStoreVersionCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CADB114019B93044003A0D66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CADB114219B93044003A0D66 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CADB114419B93044003A0D66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CADB114819B93044003A0D66 /* RMAppStoreVersionCheck-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RMAppStoreVersionCheck-Info.plist"; sourceTree = "<group>"; };
+		CADB114A19B93044003A0D66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CADB114C19B93044003A0D66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CADB114E19B93044003A0D66 /* RMAppStoreVersionCheck-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RMAppStoreVersionCheck-Prefix.pch"; sourceTree = "<group>"; };
+		CADB114F19B93044003A0D66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CADB115019B93044003A0D66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CADB115319B93044003A0D66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CADB115519B93044003A0D66 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CADB115619B93044003A0D66 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CADB115819B93044003A0D66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CADB115E19B93044003A0D66 /* RMAppStoreVersionCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMAppStoreVersionCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CADB115F19B93044003A0D66 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CADB116719B93044003A0D66 /* RMAppStoreVersionCheckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RMAppStoreVersionCheckTests-Info.plist"; sourceTree = "<group>"; };
+		CADB116919B93044003A0D66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CADB116B19B93044003A0D66 /* RMAppStoreVersionCheckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMAppStoreVersionCheckTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CADB113A19B93044003A0D66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CADB114319B93044003A0D66 /* CoreGraphics.framework in Frameworks */,
+				CADB114519B93044003A0D66 /* UIKit.framework in Frameworks */,
+				CADB114119B93044003A0D66 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CADB115B19B93044003A0D66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CADB116019B93044003A0D66 /* XCTest.framework in Frameworks */,
+				CADB116219B93044003A0D66 /* UIKit.framework in Frameworks */,
+				CADB116119B93044003A0D66 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CADB113419B93044003A0D66 = {
+			isa = PBXGroup;
+			children = (
+				CADB114619B93044003A0D66 /* RMAppStoreVersionCheck */,
+				CADB116519B93044003A0D66 /* RMAppStoreVersionCheckTests */,
+				CADB113F19B93044003A0D66 /* Frameworks */,
+				CADB113E19B93044003A0D66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CADB113E19B93044003A0D66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CADB113D19B93044003A0D66 /* RMAppStoreVersionCheck.app */,
+				CADB115E19B93044003A0D66 /* RMAppStoreVersionCheckTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CADB113F19B93044003A0D66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CADB114019B93044003A0D66 /* Foundation.framework */,
+				CADB114219B93044003A0D66 /* CoreGraphics.framework */,
+				CADB114419B93044003A0D66 /* UIKit.framework */,
+				CADB115F19B93044003A0D66 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CADB114619B93044003A0D66 /* RMAppStoreVersionCheck */ = {
+			isa = PBXGroup;
+			children = (
+				CADB114F19B93044003A0D66 /* AppDelegate.h */,
+				CADB115019B93044003A0D66 /* AppDelegate.m */,
+				CADB115219B93044003A0D66 /* Main.storyboard */,
+				CADB115519B93044003A0D66 /* ViewController.h */,
+				CADB115619B93044003A0D66 /* ViewController.m */,
+				CADB115819B93044003A0D66 /* Images.xcassets */,
+				CADB114719B93044003A0D66 /* Supporting Files */,
+			);
+			path = RMAppStoreVersionCheck;
+			sourceTree = "<group>";
+		};
+		CADB114719B93044003A0D66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CADB114819B93044003A0D66 /* RMAppStoreVersionCheck-Info.plist */,
+				CADB114919B93044003A0D66 /* InfoPlist.strings */,
+				CADB114C19B93044003A0D66 /* main.m */,
+				CADB114E19B93044003A0D66 /* RMAppStoreVersionCheck-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CADB116519B93044003A0D66 /* RMAppStoreVersionCheckTests */ = {
+			isa = PBXGroup;
+			children = (
+				CADB116B19B93044003A0D66 /* RMAppStoreVersionCheckTests.m */,
+				CADB116619B93044003A0D66 /* Supporting Files */,
+			);
+			path = RMAppStoreVersionCheckTests;
+			sourceTree = "<group>";
+		};
+		CADB116619B93044003A0D66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CADB116719B93044003A0D66 /* RMAppStoreVersionCheckTests-Info.plist */,
+				CADB116819B93044003A0D66 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CADB113C19B93044003A0D66 /* RMAppStoreVersionCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CADB116F19B93044003A0D66 /* Build configuration list for PBXNativeTarget "RMAppStoreVersionCheck" */;
+			buildPhases = (
+				CADB113919B93044003A0D66 /* Sources */,
+				CADB113A19B93044003A0D66 /* Frameworks */,
+				CADB113B19B93044003A0D66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RMAppStoreVersionCheck;
+			productName = RMAppStoreVersionCheck;
+			productReference = CADB113D19B93044003A0D66 /* RMAppStoreVersionCheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CADB115D19B93044003A0D66 /* RMAppStoreVersionCheckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CADB117219B93044003A0D66 /* Build configuration list for PBXNativeTarget "RMAppStoreVersionCheckTests" */;
+			buildPhases = (
+				CADB115A19B93044003A0D66 /* Sources */,
+				CADB115B19B93044003A0D66 /* Frameworks */,
+				CADB115C19B93044003A0D66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CADB116419B93044003A0D66 /* PBXTargetDependency */,
+			);
+			name = RMAppStoreVersionCheckTests;
+			productName = RMAppStoreVersionCheckTests;
+			productReference = CADB115E19B93044003A0D66 /* RMAppStoreVersionCheckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CADB113519B93044003A0D66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Rocketmade;
+				TargetAttributes = {
+					CADB115D19B93044003A0D66 = {
+						TestTargetID = CADB113C19B93044003A0D66;
+					};
+				};
+			};
+			buildConfigurationList = CADB113819B93044003A0D66 /* Build configuration list for PBXProject "RMAppStoreVersionCheck" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CADB113419B93044003A0D66;
+			productRefGroup = CADB113E19B93044003A0D66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CADB113C19B93044003A0D66 /* RMAppStoreVersionCheck */,
+				CADB115D19B93044003A0D66 /* RMAppStoreVersionCheckTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CADB113B19B93044003A0D66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CADB115919B93044003A0D66 /* Images.xcassets in Resources */,
+				CADB114B19B93044003A0D66 /* InfoPlist.strings in Resources */,
+				CADB115419B93044003A0D66 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CADB115C19B93044003A0D66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CADB116A19B93044003A0D66 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CADB113919B93044003A0D66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CADB115719B93044003A0D66 /* ViewController.m in Sources */,
+				CADB115119B93044003A0D66 /* AppDelegate.m in Sources */,
+				CADB114D19B93044003A0D66 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CADB115A19B93044003A0D66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CADB116C19B93044003A0D66 /* RMAppStoreVersionCheckTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CADB116419B93044003A0D66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CADB113C19B93044003A0D66 /* RMAppStoreVersionCheck */;
+			targetProxy = CADB116319B93044003A0D66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CADB114919B93044003A0D66 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CADB114A19B93044003A0D66 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CADB115219B93044003A0D66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CADB115319B93044003A0D66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CADB116819B93044003A0D66 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CADB116919B93044003A0D66 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CADB116D19B93044003A0D66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CADB116E19B93044003A0D66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CADB117019B93044003A0D66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMAppStoreVersionCheck/RMAppStoreVersionCheck-Prefix.pch";
+				INFOPLIST_FILE = "RMAppStoreVersionCheck/RMAppStoreVersionCheck-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CADB117119B93044003A0D66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMAppStoreVersionCheck/RMAppStoreVersionCheck-Prefix.pch";
+				INFOPLIST_FILE = "RMAppStoreVersionCheck/RMAppStoreVersionCheck-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CADB117319B93044003A0D66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RMAppStoreVersionCheck.app/RMAppStoreVersionCheck";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMAppStoreVersionCheck/RMAppStoreVersionCheck-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RMAppStoreVersionCheckTests/RMAppStoreVersionCheckTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CADB117419B93044003A0D66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RMAppStoreVersionCheck.app/RMAppStoreVersionCheck";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMAppStoreVersionCheck/RMAppStoreVersionCheck-Prefix.pch";
+				INFOPLIST_FILE = "RMAppStoreVersionCheckTests/RMAppStoreVersionCheckTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CADB113819B93044003A0D66 /* Build configuration list for PBXProject "RMAppStoreVersionCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CADB116D19B93044003A0D66 /* Debug */,
+				CADB116E19B93044003A0D66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CADB116F19B93044003A0D66 /* Build configuration list for PBXNativeTarget "RMAppStoreVersionCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CADB117019B93044003A0D66 /* Debug */,
+				CADB117119B93044003A0D66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CADB117219B93044003A0D66 /* Build configuration list for PBXNativeTarget "RMAppStoreVersionCheckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CADB117319B93044003A0D66 /* Debug */,
+				CADB117419B93044003A0D66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CADB113519B93044003A0D66 /* Project object */;
+}
