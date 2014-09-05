@@ -13,14 +13,14 @@
 		CA7EC6E219BA2174008C42EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA7EC6E019BA2174008C42EE /* InfoPlist.strings */; };
 		CA7EC6E419BA2174008C42EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7EC6E319BA2174008C42EE /* main.m */; };
 		CA7EC6E819BA2174008C42EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7EC6E719BA2174008C42EE /* AppDelegate.m */; };
-		CA7EC6EB19BA2174008C42EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7EC6E919BA2174008C42EE /* Main.storyboard */; };
-		CA7EC6EE19BA2174008C42EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7EC6ED19BA2174008C42EE /* ViewController.m */; };
 		CA7EC6F019BA2174008C42EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7EC6EF19BA2174008C42EE /* Images.xcassets */; };
 		CA7EC6F719BA2174008C42EE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7EC6F619BA2174008C42EE /* XCTest.framework */; };
 		CA7EC6F819BA2174008C42EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7EC6D719BA2174008C42EE /* Foundation.framework */; };
 		CA7EC6F919BA2174008C42EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7EC6DB19BA2174008C42EE /* UIKit.framework */; };
 		CA7EC70119BA2174008C42EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA7EC6FF19BA2174008C42EE /* InfoPlist.strings */; };
 		CA7EC70319BA2174008C42EE /* VersionCheckExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7EC70219BA2174008C42EE /* VersionCheckExampleTests.m */; };
+		CA7EC70D19BA2192008C42EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7EC70C19BA2192008C42EE /* ViewController.m */; };
+		CA7EC70F19BA219F008C42EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7EC70E19BA219F008C42EE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +44,15 @@
 		CA7EC6E519BA2174008C42EE /* VersionCheckExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VersionCheckExample-Prefix.pch"; sourceTree = "<group>"; };
 		CA7EC6E619BA2174008C42EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA7EC6E719BA2174008C42EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CA7EC6EA19BA2174008C42EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA7EC6EC19BA2174008C42EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CA7EC6ED19BA2174008C42EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CA7EC6EF19BA2174008C42EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CA7EC6F519BA2174008C42EE /* VersionCheckExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VersionCheckExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7EC6F619BA2174008C42EE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CA7EC6FE19BA2174008C42EE /* VersionCheckExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VersionCheckExampleTests-Info.plist"; sourceTree = "<group>"; };
 		CA7EC70019BA2174008C42EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CA7EC70219BA2174008C42EE /* VersionCheckExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VersionCheckExampleTests.m; sourceTree = "<group>"; };
+		CA7EC70C19BA2192008C42EE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CA7EC70E19BA219F008C42EE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +114,11 @@
 			children = (
 				CA7EC6E619BA2174008C42EE /* AppDelegate.h */,
 				CA7EC6E719BA2174008C42EE /* AppDelegate.m */,
-				CA7EC6E919BA2174008C42EE /* Main.storyboard */,
-				CA7EC6EC19BA2174008C42EE /* ViewController.h */,
-				CA7EC6ED19BA2174008C42EE /* ViewController.m */,
 				CA7EC6EF19BA2174008C42EE /* Images.xcassets */,
+				CA7EC70E19BA219F008C42EE /* Main.storyboard */,
 				CA7EC6DE19BA2174008C42EE /* Supporting Files */,
+				CA7EC6EC19BA2174008C42EE /* ViewController.h */,
+				CA7EC70C19BA2192008C42EE /* ViewController.m */,
 			);
 			path = VersionCheckExample;
 			sourceTree = "<group>";
@@ -228,9 +228,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA7EC70F19BA219F008C42EE /* Main.storyboard in Resources */,
 				CA7EC6F019BA2174008C42EE /* Images.xcassets in Resources */,
 				CA7EC6E219BA2174008C42EE /* InfoPlist.strings in Resources */,
-				CA7EC6EB19BA2174008C42EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7EC6EE19BA2174008C42EE /* ViewController.m in Sources */,
+				CA7EC70D19BA2192008C42EE /* ViewController.m in Sources */,
 				CA7EC6E819BA2174008C42EE /* AppDelegate.m in Sources */,
 				CA7EC6E419BA2174008C42EE /* main.m in Sources */,
 			);
@@ -280,14 +280,6 @@
 				CA7EC6E119BA2174008C42EE /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CA7EC6E919BA2174008C42EE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CA7EC6EA19BA2174008C42EE /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		CA7EC6FF19BA2174008C42EE /* InfoPlist.strings */ = {
