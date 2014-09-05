@@ -109,7 +109,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef __unused target, SCNet
 	return returnValue;
 }
 
-- (void)reachabilityEstablishe {
+- (void)reachabilityEstablished {
     if (self.reachability) {
         SCNetworkReachabilityUnscheduleFromRunLoop(self.reachability, CFRunLoopGetCurrent(), kCFRunLoopDefaultMode);
     }

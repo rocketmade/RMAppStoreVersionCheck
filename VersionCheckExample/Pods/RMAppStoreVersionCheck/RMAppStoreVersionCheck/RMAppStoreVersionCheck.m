@@ -22,15 +22,13 @@ NSString *const kItunesHostname = @"itunes.apple.com";
 
 @end
 
-static void ReachabilityCallback(SCNetworkReachabilityRef __unused target, SCNetworkReachabilityFlags flags, void* info)
-{
+static void ReachabilityCallback(SCNetworkReachabilityRef __unused target, SCNetworkReachabilityFlags flags, void* info) {
 	NSCAssert(info != NULL, @"info was NULL in ReachabilityCallback");
 	NSCAssert([(__bridge NSObject*) info isKindOfClass: [RMAppStoreVersionCheck class]], @"info was wrong class in ReachabilityCallback");
 
     RMAppStoreVersionCheck* infoObject = (__bridge RMAppStoreVersionCheck *)info;
     BOOL isReachable = ((flags & kSCNetworkReachabilityFlagsReachable) != 0);
-    if (isReachable)
-    {
+    if (isReachable) {
         [infoObject reachabilityEstablished];
     }
 }
@@ -39,21 +37,17 @@ static void ReachabilityCallback(SCNetworkReachabilityRef __unused target, SCNet
 
 #pragma mark - Entry points
 
-- (void)checkAppStoreVersion:(appStoreCheckCallbackBlock)completion
-{
+- (void)checkAppStoreVersion:(appStoreCheckCallbackBlock)completion {
     [self checkAppStoreVersionForBundleID:[[NSBundle mainBundle] bundleIdentifier] completion:completion];
 }
 
-- (void)checkAppStoreVersionForBundleID:(NSString *)bundleID completion:(appStoreCheckCallbackBlock)completion
-{
+- (void)checkAppStoreVersionForBundleID:(NSString *)bundleID completion:(appStoreCheckCallbackBlock)completion {
     NSParameterAssert(bundleID);
     self.bundleID = bundleID;
     self.completionBlock = completion;
-    if (![self startReachability])
-    {
+    if (![self startReachability]) {
         NSError *error = [NSError errorWithDomain:@"com.rocketmade.VersionCheck" code:VersionCheckFailureItunesNotAvailble userInfo:@{NSLocalizedDescriptionKey: @"Failed to start reachability for iTunes"}];
-        if (self.completionBlock)
-        {
+        if (self.completionBlock) {
             completion(nil, error);
         }
         self.completionBlock = nil;
@@ -62,8 +56,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef __unused target, SCNet
 
 #pragma mark - version check
 
-- (void)appStoreCheck
-{
+- (void)appStoreCheck {
     assert(self.bundleID);
     NSString *urlString = [@"https://itunes.apple.com/lookup?bundleId=" stringByAppendingString:self.bundleID];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
@@ -71,35 +64,28 @@ static void ReachabilityCallback(SCNetworkReachabilityRef __unused target, SCNet
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         RMAppVersionInformation *version;
         NSError *error = connectionError;
-        if (data)
-        {
+        if (data) {
             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
             NSString *appStoreVersion = [self versionFromResultsJSON:json[@"results"]];
 
-            if (!appStoreVersion)
-            {
+            if (!appStoreVersion) {
                 error = [NSError errorWithDomain:@"com.rocketmade.VersionCheck" code:VersionCheckFailureMissingResponseData userInfo:@{NSLocalizedDescriptionKey : @"version key or bundle id not found in itunes response"}];
             }
-
             version = [[RMAppVersionInformation alloc] initWithAppStoreVersion:appStoreVersion];
         }
 
-        if (self.completionBlock)
-        {
+        if (self.completionBlock) {
             self.completionBlock(version, error);
         }
         self.completionBlock = nil;
     }];
 }
 
-- (NSString *)versionFromResultsJSON:(NSArray *)JSON
-{
-    for (NSDictionary *result in JSON)
-    {
+- (NSString *)versionFromResultsJSON:(NSArray *)JSON {
+    for (NSDictionary *result in JSON) {
         NSString *resultBundleID = result[@"bundleId"];
         assert(self.bundleID);
-        if ([resultBundleID isEqualToString:self.bundleID])
-        {
+        if ([resultBundleID isEqualToString:self.bundleID]) {
             return result[@"version"];
         }
     }
@@ -108,29 +94,23 @@ static void ReachabilityCallback(SCNetworkReachabilityRef __unused target, SCNet
 
 #pragma mark - Reachability code
 
-- (BOOL)startReachability
-{
-    if (!self.reachability)
-    {
+- (BOOL)startReachability {
+    if (!self.reachability) {
         self.reachability = SCNetworkReachabilityCreateWithName(NULL, [kItunesHostname UTF8String]);
     }
 
     BOOL returnValue = NO;
 	SCNetworkReachabilityContext context = {0, (__bridge void *)(self), NULL, NULL, NULL};
-	if (SCNetworkReachabilitySetCallback(self.reachability, ReachabilityCallback, &context))
-	{
-		if (SCNetworkReachabilityScheduleWithRunLoop(self.reachability, CFRunLoopGetCurrent(), kCFRunLoopDefaultMode))
-		{
+	if (SCNetworkReachabilitySetCallback(self.reachability, ReachabilityCallback, &context)) {
+		if (SCNetworkReachabilityScheduleWithRunLoop(self.reachability, CFRunLoopGetCurrent(), kCFRunLoopDefaultMode)) {
 			returnValue = YES;
 		}
 	}
 	return returnValue;
 }
 
-- (void)reachabilityEstablished
-{
-    if (self.reachability)
-    {
+- (void)reachabilityEstablished {
+    if (self.reachability) {
         SCNetworkReachabilityUnscheduleFromRunLoop(self.reachability, CFRunLoopGetCurrent(), kCFRunLoopDefaultMode);
     }
     [self appStoreCheck];
@@ -138,8 +118,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef __unused target, SCNet
 
 #pragma mark - lifecycle
 
-- (void)dealloc
-{
+- (void)dealloc {
     CFRelease(self.reachability);
     self.reachability = nil;
 }
