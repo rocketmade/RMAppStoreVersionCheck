@@ -38,7 +38,7 @@
     [self.activityIndicator startAnimating];
     sender.hidden = YES;
 
-    [self.versionCheck checkAppStoreVersionForBundleID:@"com.payclip.Clip" completion:^(RMAppVersionInformation *versionInfo, NSError *error) {
+    [self.versionCheck checkAppStoreVersionForBundleID:@"com.rocketmade.Rocketmade-Invaders" completion:^(RMAppVersionInformation *versionInfo, NSError *error) {
         self.checkingVersionLabel.hidden = YES;
         self.activityIndicator.hidden = YES;
         [self.activityIndicator stopAnimating];
