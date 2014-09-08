@@ -6,7 +6,7 @@ A simple block based library used to query the app store for new versions of you
 ###Installation
 
 ```ruby
-pod 'RMAppStoreVersionCheck', :git => 'https://github.com/rocketmade/RMAppStoreVersionCheck.git', :branch => 'master', :commit => 'head'
+pod 'RMAppStoreVersionCheck', '~> 1.0'
 ```
 
 ###Usage
