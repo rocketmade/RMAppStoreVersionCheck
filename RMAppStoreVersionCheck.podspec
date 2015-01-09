@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RMAppStoreVersionCheck"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A block based ios library for checking for app store updates"
 
   s.description  = "Uses reachability to wait for network connectivity before checking the app store for new versions of the app."
